@@ -11,7 +11,7 @@ public class CustomerRowMapper implements RowMapper<Customer> {
     public Customer mapRow(ResultSet rs, int rowNum) throws SQLException {
         Customer c = new Customer();
         c.setCustomerId(rs.getInt("id"));
-        c.setCompany("company");
+        c.setCompany(rs.getString("company"));
         c.setLastName(rs.getString("last_name"));
         c.setFirstName(rs.getString("first_name"));
         c.setEmail(rs.getString("email_address"));
