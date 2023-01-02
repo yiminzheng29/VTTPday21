@@ -27,7 +27,7 @@ public class CustomerRESTController {
 
     //http://localhost:8080/api/customer?limit=30&offset=3
     //http://localhost:8080/api/customer/27
-    //http://localhost:8080/api/customer/23/orders
+    //http://localhost:8080/api/customer/27/orders
 
     @Autowired
     private CustomerRepository custRepo;
