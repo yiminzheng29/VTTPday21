@@ -67,7 +67,7 @@ public class Order {
         Customer c = new Customer();
         Order ord = new Order();
         c.setCustomerId(rs.getInt("customer_id"));
-        c.setCompany("company");
+        c.setCompany(rs.getString("company"));
         c.setLastName(rs.getString("last_name"));
         c.setFirstName(rs.getString("first_name"));
         c.setEmail(rs.getString("email_address"));

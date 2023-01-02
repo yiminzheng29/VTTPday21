@@ -119,7 +119,7 @@ public class Customer {
     public static Customer create(SqlRowSet rs) {
         Customer c = new Customer();
         c.setCustomerId(rs.getInt("id"));
-        c.setCompany("company");
+        c.setCompany(rs.getString("company"));
         c.setLastName(rs.getString("last_name"));
         c.setFirstName(rs.getString("first_name"));
         return c;
